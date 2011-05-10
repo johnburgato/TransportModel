@@ -1,0 +1,18 @@
+﻿<Window x:Class="TransportModel.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="600" Width="500">
+    <Grid>
+        <Grid Name="GoonX">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Name="lblGlobalOutput" Grid.Column="0" Grid.Row="0" Margin="8,2,8,2">John 1</Label>
+            <Frame Name="Frame1" Grid.Column="0" Grid.Row="1"></Frame>
+        </Grid>
+    </Grid>
+</Window>

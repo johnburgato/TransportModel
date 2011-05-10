@@ -1,0 +1,27 @@
+﻿<Page x:Class="TransportModel.MainMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainMenu" Loaded="Page_Loaded">
+    <Grid>
+        <Grid Name="grdLayout">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"></RowDefinition>
+                <RowDefinition Height="45"></RowDefinition>
+                <RowDefinition Height="45"></RowDefinition>
+                <RowDefinition Height="45"></RowDefinition>
+                <RowDefinition Height="45"></RowDefinition>
+                <RowDefinition Height="45"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Height="23" HorizontalAlignment="Center"  Name="btnImport" VerticalAlignment="Center"  Width="150" Grid.Column="0" Grid.Row="0" Click="btnImport_Click">Import from DB</Button>
+            <Button Height="23" HorizontalAlignment="Center"  Name="btnLoad" VerticalAlignment="Center"  Width="150" Grid.Column="0" Grid.Row="1">Load from file</Button>
+            <Button Height="23" HorizontalAlignment="Center"  Name="btnSave" VerticalAlignment="Center"  Width="150" Grid.Column="0" Grid.Row="2" Click="btnSave_Click" IsEnabled="{Binding CanSave}">Save to file</Button>
+            <Button Height="23" HorizontalAlignment="Center"  Name="btnRun" VerticalAlignment="Center"  Width="150" Grid.Column="0" Grid.Row="3" IsEnabled="{Binding CanRun}">Run server</Button>
+            <Button Height="23" HorizontalAlignment="Center"  Name="btnQuit" VerticalAlignment="Center"  Width="150" Grid.Column="0" Grid.Row="4" Click="btnQuit_Click">Quit</Button>
+            <Button Height="23" HorizontalAlignment="Center"  Name="btnTest" VerticalAlignment="Center"  Width="150" Grid.Column="0" Grid.Row="5" Click="btnTest_Click">Test</Button>
+        </Grid>
+    </Grid>
+</Page>

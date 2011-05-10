@@ -1,0 +1,7 @@
+C:\Development\projects\TransportModel\TransportModel.Shared\bin\Debug\TransportModel.Shared.dll
+C:\Development\projects\TransportModel\TransportModel.Shared\bin\Debug\TransportModel.Shared.pdb
+C:\Development\projects\TransportModel\TransportModel.Shared\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\projects\TransportModel\TransportModel.Shared\obj\Debug\TransportModel.Shared.dll
+C:\Development\projects\TransportModel\TransportModel.Shared\obj\Debug\TransportModel.Shared.pdb
+C:\Development\projects\TransportModel\TransportModel.Shared\bin\Debug\ProjNet.dll
+C:\Development\projects\TransportModel\TransportModel.Shared\bin\Debug\ProjNet.xml

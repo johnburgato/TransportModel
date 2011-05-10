@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21, 19.25" name="RoadNetwork">
+  <DataContextMoniker Name="/RoadNetworkDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e21aeda4-5b62-4afa-9cbf-9f1b06e3dd85" absoluteBounds="0.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/AccessRestrictionDate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9950dab-fb53-4d7a-9156-6125f3e8faa8" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a93b7a83-dc27-4b2c-8392-31ba2c815fb3" absoluteBounds="3.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/RoadNetworkDataContext/AccessRestriction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ef88519-a660-4c29-a72f-c390b58e6b0a" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd555fce-93e6-4133-a888-ad086e946503" absoluteBounds="0.75, 4.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/AccessRestrictionTime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3c8e440-47a5-47aa-aa89-f665884805b4" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f980e32-813c-4d96-895a-e3a77af1a0e0" absoluteBounds="3.75, 4.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/AttributeDefinition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad9a7681-8fe4-427c-b0b1-0ca104bab7d6" absoluteBounds="3.765, 5.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e29542a8-7b65-430e-a40f-6fd229eca398" absoluteBounds="6.75, 0.75, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/RoadNetworkDataContext/AttributeList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12314367-4348-4aec-ae02-43c54155abca" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d79ea70-5501-4268-ba8c-6254dc936eb8" absoluteBounds="6.75, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/ConditionalAttribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f40d364-86e9-4d37-9d16-2cdf1f1f4f8b" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="523db12c-bc6f-4cfe-a707-f71b919d0bf3" absoluteBounds="6.75, 6.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/DayType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1a91ba0-a3af-4816-a73a-38447053a03b" absoluteBounds="6.765, 7.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5daf600e-b9b1-4b14-b2e2-abd85ae35d5d" absoluteBounds="0.75, 7.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/EnumDirection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf01935e-bba2-4af9-85b3-aeb977e40e1e" absoluteBounds="0.765, 8.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3e5f46f-5255-489d-8cce-b42bba5ed052" absoluteBounds="3.75, 8.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/EnumRoadType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53d67cf3-fe53-4dcf-a2eb-0b694fded685" absoluteBounds="3.765, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83f8597c-fea2-479c-a8c1-de38991124e4" absoluteBounds="6.75, 8.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/EnumRRIClassification" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28a2a58a-30dc-4561-bf8a-44a3f681c238" absoluteBounds="6.765, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee62244c-a166-44d8-bdaf-4f031f36f037" absoluteBounds="9.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/RoadNetworkDataContext/EnumRRIInstruction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c1ce3be-4d05-4dcd-a5e5-9c5da9b8ec5f" absoluteBounds="9.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="17188bdd-b6ac-43ba-bd33-c396af228314" absoluteBounds="9.75, 2.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/RoadNetworkDataContext/EnumRRIVehicleType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e27e1ac9-3e1f-4d9d-9d9f-beb386bed316" absoluteBounds="9.765, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2da6594-f3ae-4807-a757-24220cac2b50" absoluteBounds="9.75, 4.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/EnumRRIVehicleUse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5401f9e8-16d8-4304-8c45-4ebe9061ccad" absoluteBounds="9.765, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e221379-6d13-4d08-a002-ccb3b7d49fc9" absoluteBounds="9.75, 6.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/RoadNetworkDataContext/InformationPoint" />
+      <nestedChildShapes>
+        <elementListCompartment Id="106f35b3-a9ee-4064-8b3e-dc512688b27f" absoluteBounds="9.765, 7.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0819ca4-b9bf-40fc-bce6-93737dca2c6c" absoluteBounds="9.75, 9.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/RoadNetworkDataContext/Link" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bbafc5c9-efc7-4342-ad89-b2a2e3aceec4" absoluteBounds="9.765, 10.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a41382de-b2ac-4660-b219-18f55cac7342" absoluteBounds="0.75, 10.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/RoadNetworkDataContext/LinkUserAttribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb724232-ebca-46f8-bec7-6d564f5397b5" absoluteBounds="0.765, 11.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="37486d79-dfb3-48cd-9500-691e5aefca39" absoluteBounds="3.75, 10.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/NamedDate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20ea9486-fcb6-4f58-ae0b-30b4abb8a19d" absoluteBounds="3.765, 11.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ce9e48e0-263b-4d15-9c67-e7401e4ce55b" absoluteBounds="12.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/RoadNetworkDataContext/NamedTime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42714959-5760-45f2-97ab-e93417712ca3" absoluteBounds="12.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e542bf73-b7fb-4788-9d82-698e4faeed3a" absoluteBounds="12.75, 2.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/Node" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfc21b03-9ce1-4bc5-bb12-aabf16e714ed" absoluteBounds="12.765, 3.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7c5de29-a691-4263-bfda-4940f006fd4e" absoluteBounds="3.75, 12.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/RoadNetworkDataContext/NodeUserAttribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b8fa9a2-cb0c-4992-83f6-7c679259c5bd" absoluteBounds="3.765, 13.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9be0a7bd-0cbb-4243-abff-43338fe5e561" absoluteBounds="12.75, 5.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RestrictionDefinition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="113d5ea5-e9e7-42ec-ab85-cc05d38076bf" absoluteBounds="12.765, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38b0be8f-5cb3-4e13-b067-695e74aa5545" absoluteBounds="12.75, 8.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RestrictionPriority" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e524738-386d-4425-b6f8-cabf8e601588" absoluteBounds="12.765, 9.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3444bd23-0ed4-4855-933a-dd0a5f3bf636" absoluteBounds="12.75, 11.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RoadLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec05ffb3-45fa-427b-8edc-c09aa07f620d" absoluteBounds="12.765, 12.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee69a252-9467-4df4-b5e7-546a5af40a57" absoluteBounds="12.75, 13.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RoadNetTotal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74224cf2-9eff-48af-a603-423039083711" absoluteBounds="12.765, 14.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b374228-78a0-4307-88fb-ff462b233ecd" absoluteBounds="6.75, 14.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/Road" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed4b6c28-4a96-4ad2-8e7e-af3ac9d519f1" absoluteBounds="6.765, 15.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dad61d88-dce7-441c-b4b7-9266a1cfd851" absoluteBounds="15.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RRILink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e60cc883-daab-4865-9c8a-ef049d91570a" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="133f56b4-3f2b-46a2-a1b5-c7828152d560" absoluteBounds="0.75, 15.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RRINode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4761ab47-c3b7-4b82-af7e-d47c06b527c9" absoluteBounds="0.765, 16.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc58c4ab-6095-4aca-9076-77fac58809cf" absoluteBounds="15.75, 3.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RRIRouteDirectedLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae082557-2d80-47f3-9b07-f280775880d9" absoluteBounds="15.765, 4.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e5aae48-e687-4617-8652-b2768ae6e623" absoluteBounds="15.75, 6.75, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RRIRoute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="757e5f41-bc58-46d8-96a3-b2b2963e5fe3" absoluteBounds="15.765, 7.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b92f94b4-49b2-4c91-b280-5aef42d39c15" absoluteBounds="15.75, 9.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/RRIRouteText" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95ae9dbf-92a0-41af-b228-76c3a5519592" absoluteBounds="15.765, 10.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f1f679c-16c4-4b7b-8bb6-27b8bb6de69c" absoluteBounds="9.75, 15.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RoadNetworkDataContext/temp_DebugLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f634fc1a-fa9a-41df-847c-dce92c3551d3" absoluteBounds="9.765, 16.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="17d9ae4b-0a5a-4885-8b54-0395a6ccd494" absoluteBounds="15.75, 11.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/RoadNetworkDataContext/temp_deletedLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1059d79f-9de2-45ae-ba3c-17f146ca490c" absoluteBounds="15.765, 12.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="49ca57a7-a4ba-4f75-af44-4f1feaff1ff1" absoluteBounds="12.75, 16.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/RoadNetworkDataContext/temp_LinksOriginal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e82fa9af-747e-45e6-8958-2c4766559440" absoluteBounds="12.765, 17.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="258f9105-53e6-4815-805a-a6cd0bbd82cd" absoluteBounds="15.75, 16.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/RoadNetworkDataContext/temp_LinkUserAttributesOriginal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb5660a0-2166-439e-91fe-48c90cff5dbf" absoluteBounds="15.765, 17.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="820289f7-ca77-42fc-8cdd-b8ad736ed523" absoluteBounds="3.75, 17.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/RoadNetworkDataContext/temp_PathLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3716a3a8-b673-4046-8679-ac3634f8c2aa" absoluteBounds="3.765, 18.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="448e112d-a964-4d14-95d1-743c087a6d23" absoluteBounds="18.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/RoadNetworkDataContext/temp_PathLinksOriginal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39768dc5-99ae-4d48-bc46-1e2f10707979" absoluteBounds="18.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5ab5859-abc9-4344-ad9e-326b583cba22" absoluteBounds="18.75, 2.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/RoadNetworkDataContext/VehicleType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33e64f18-665c-44d2-a07e-0ee2f0b86a35" absoluteBounds="18.765, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e532f851-97e0-438b-90c7-53c63abddbb6" absoluteBounds="18.75, 4.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RoadNetworkDataContext/VersionInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28f697a3-d3ba-48c2-bdf6-074284c613b0" absoluteBounds="18.765, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

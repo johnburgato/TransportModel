@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="RoadNetwork" Class="RoadNetworkDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=RoadNetwork;Integrated Security=True" SettingsObjectName="TransportModel.Properties.Settings" SettingsPropertyName="RoadNetworkConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AccessRestrictionDates" Member="AccessRestrictionDates">
+    <Type Name="AccessRestrictionDate">
+      <Column Name="link" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="groupKey" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="startDate" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="endDate" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccessRestrictions" Member="AccessRestrictions">
+    <Type Name="AccessRestriction">
+      <Column Name="link" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="direction" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="groupKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AppliesTo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dayMask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dateType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="timeType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccessRestrictionTimes" Member="AccessRestrictionTimes">
+    <Type Name="AccessRestrictionTime">
+      <Column Name="link" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="groupKey" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="startTime" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="endTime" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AttributeDefinition" Member="AttributeDefinitions">
+    <Type Name="AttributeDefinition">
+      <Column Name="Type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ArrayIndex" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Mask" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Direction" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Direction_Value" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AttributeList" Member="AttributeLists">
+    <Type Name="AttributeList">
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="node" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="arrayindex" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ATOB_mask" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="BTOA_mask" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConditionalAttributes" Member="ConditionalAttributes">
+    <Type Name="ConditionalAttribute">
+      <Column Name="SourceDescription" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SourceAttribute" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SourceIndex" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SetAttribute" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SetIndex" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SetValue" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SetDescription" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DayTypes" Member="DayTypes">
+    <Type Name="DayType">
+      <Column Name="name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="mask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EnumDirection" Member="EnumDirections">
+    <Type Name="EnumDirection">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EnumRoadType" Member="EnumRoadTypes">
+    <Type Name="EnumRoadType">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EnumRRIClassification" Member="EnumRRIClassifications">
+    <Type Name="EnumRRIClassification">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EnumRRIInstruction" Member="EnumRRIInstructions">
+    <Type Name="EnumRRIInstruction">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EnumRRIVehicleType" Member="EnumRRIVehicleTypes">
+    <Type Name="EnumRRIVehicleType">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EnumRRIVehicleUse" Member="EnumRRIVehicleUses">
+    <Type Name="EnumRRIVehicleUse">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InformationPoints" Member="InformationPoints">
+    <Type Name="InformationPoint">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Toid" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="Easting" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Northing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Links" Member="Links">
+    <Type Name="Link">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Toid" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="Length" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ANode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BNode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AGrade" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BGrade" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Road" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Polyline" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Attributes" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RoadNumber" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ReferenceToLink" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="StartDistanceFromStart" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EndDistanceFromStart" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkUserAttributes" Member="LinkUserAttributes">
+    <Type Name="LinkUserAttribute">
+      <Column Name="link" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[index]" Member="index" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="attributes" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NamedDates" Member="NamedDates">
+    <Type Name="NamedDate">
+      <Column Name="name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="dateType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NamedTimes" Member="NamedTimes">
+    <Type Name="NamedTime">
+      <Column Name="name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="timeType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nodes" Member="Nodes">
+    <Type Name="Node">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Toid" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="Easting" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Northing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Attributes" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ReferenceToLink" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="DistanceFromStart" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NodeUserAttributes" Member="NodeUserAttributes">
+    <Type Name="NodeUserAttribute">
+      <Column Name="node" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[index]" Member="index" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="attributes" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RestrictionDefinition" Member="RestrictionDefinitions">
+    <Type Name="RestrictionDefinition">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RestrictionPriority" Member="RestrictionPriorities">
+    <Type Name="RestrictionPriority">
+      <Column Name="Priority" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Mask" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ArrayIndex" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoadLinks" Member="RoadLinks">
+    <Type Name="RoadLink">
+      <Column Name="RoadId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LinkId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoadNetTotals" Member="RoadNetTotals">
+    <Type Name="RoadNetTotal">
+      <Column Name="Field" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roads" Member="Roads">
+    <Type Name="Road">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Toid" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RRILinks" Member="RRILinks">
+    <Type Name="RRILink">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Toid" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="Instruction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Classification" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VehicleType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VehicleUse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Link" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RRINodes" Member="RRINodes">
+    <Type Name="RRINode">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Toid" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="Instruction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Classification" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VehicleType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VehicleUse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Node" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RRIRouteDirectedLinks" Member="RRIRouteDirectedLinks">
+    <Type Name="RRIRouteDirectedLink">
+      <Column Name="RRIRouteid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Linkid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="direction" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RRIRoutes" Member="RRIRoutes">
+    <Type Name="RRIRoute">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Toid" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="Instruction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Classification" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VehicleType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VehicleUse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RRIRouteText" Member="RRIRouteTexts">
+    <Type Name="RRIRouteText">
+      <Column Name="RRIRouteID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temp_DebugLogs" Member="temp_DebugLogs">
+    <Type Name="temp_DebugLog">
+      <Column Name="i1" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="c1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="i2" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="c2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="i3" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="c3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temp_deletedLinks" Member="temp_deletedLinks">
+    <Type Name="temp_deletedLink">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Toid" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="Length" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ANode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BNode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AGrade" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BGrade" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Road" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Polyline" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Attributes" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RoadNumber" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ReferenceToLink" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="StartDistanceFromStart" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EndDistanceFromStart" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temp_LinksOriginal" Member="temp_LinksOriginals">
+    <Type Name="temp_LinksOriginal">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Attributes" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temp_LinkUserAttributesOriginal" Member="temp_LinkUserAttributesOriginals">
+    <Type Name="temp_LinkUserAttributesOriginal">
+      <Column Name="link" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[index]" Member="index" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="attributes" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temp_PathLinks" Member="temp_PathLinks">
+    <Type Name="temp_PathLink">
+      <Column Name="RoadId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LinkId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temp_PathLinksOriginal" Member="temp_PathLinksOriginals">
+    <Type Name="temp_PathLinksOriginal">
+      <Column Name="RoadId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LinkId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VehicleTypes" Member="VehicleTypes">
+    <Type Name="VehicleType">
+      <Column Name="name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="mask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VersionInfo" Member="VersionInfos">
+    <Type Name="VersionInfo">
+      <Column Name="VersionField" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="VersionValue" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
