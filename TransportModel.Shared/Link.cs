@@ -15,6 +15,7 @@ namespace TransportModel.Model
             public byte CAR = 0x04;
         }
 
+        public int Id { get; set; }
         public List<Link> AttachedLinks { get; set; }
         public Node StartNode { get; set; }
         public Node EndNode { get; set; }
@@ -28,6 +29,7 @@ namespace TransportModel.Model
 
         public Link(int id, double? length, long? attr, string polyLine)
         {
+            Id = id;
             Length = length;
             Attributes = attr;
             AttachedLinks = new List<Link>();

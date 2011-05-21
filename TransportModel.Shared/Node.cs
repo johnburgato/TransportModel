@@ -10,19 +10,16 @@ namespace TransportModel.Model
     {
         public List<Link> Links { get; set; }
 
-        //public int Id { get; set; }
+        public int Id { get; set; }
         public int? Eastings { get; set; }
         public int? Northigns { get; set; }
 
-        public Node()
+        public Node(int id, int? eastings, int? northings)
         {
-
-        }
-
-        public Node(int? eastings, int? northings)
-        {
+            Id = id;
             Eastings = eastings;
             Northigns = northings;
+            Links = new List<Link>();
         }
     }
 }

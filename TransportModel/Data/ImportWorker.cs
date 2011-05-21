@@ -99,10 +99,7 @@ namespace TransportModel.Data
                 foreach (Data.Node n in nodeQuery)
                 {
                     if (CheckForCancellation(this.worker, e)) return;
-                    Mem.Node memNode = new TransportModel.Model.Node();
-                    memNode.Eastings = n.Easting;
-                    memNode.Northigns = n.Northing;
-                    memNode.Links = new List<TransportModel.Model.Link>();
+                    Mem.Node memNode = new TransportModel.Model.Node(n.ID, n.Easting, n.Northing);
                     Model.AllNodes.Add(n.ID, memNode);
 
                     info.RecordNumber++;
@@ -160,6 +157,14 @@ namespace TransportModel.Data
                     LinkNodeLinks(lnk, lnk.EndNode);
                 }
 
+                info.InfoText += "Getting attributes" + Environment.NewLine;
+                info.OnPropertyChanged("InfoText");
+
+                List<Mem.Attribute> allAttributes = (from attr in DataContext.AttributeLists
+                                                     select new Mem.Attribute(attr.name, attr.value, attr.node, attr.arrayindex, attr.ATOB_mask, attr.BTOA_mask)).ToList();
+
+                Model.Attributes = allAttributes;
+                
                 info.InfoText += "Done" + Environment.NewLine;
                 info.OnPropertyChanged("InfoText");
 

@@ -8,10 +8,11 @@ namespace TransportModel.Model
     [Serializable]
     public class Model
     {
-        private Dictionary<int, List<Node>> SquareNodeLookup;
+        //private Dictionary<int, List<Node>> SquareNodeLookup;
 
         public Dictionary<int, Node> AllNodes; // key = id
         public Dictionary<int, Link> AllLinks; // key = id
+        public List<Attribute> Attributes { get; set; }
 
         public List<Link> GetLinksFrom(int linkId)
         {
@@ -32,6 +33,7 @@ namespace TransportModel.Model
         {
             AllNodes = new Dictionary<int, Node>();
             AllLinks = new Dictionary<int, Link>();
+            Attributes = new List<Attribute>();
         }
     }
 }
